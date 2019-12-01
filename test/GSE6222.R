@@ -1,0 +1,11 @@
+library(GEOmirror)
+library(idmap1)
+setwd('test/')
+geoChina('gse6222')
+load('GSE6222_eSet.Rdata')
+gset
+a=exprs(gset[[1]])
+a[1:4,1:4]
+gset[[1]]@annotation
+b=getIDs("GPL570")
+head(b)
