@@ -9,7 +9,7 @@
 ##' @export
 
 getIDs <- function(gpl){
-  gpl='gpl570'
+  # gpl='gpl570'
   gpl=toupper(gpl)
   if(!gpl %in% unique(p2s_df$gpl)){
     stop('your gpl is not in our annotation list.')

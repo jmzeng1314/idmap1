@@ -2,11 +2,10 @@
 .onAttach <- function(libname, pkgname) {
   pkgVersion <- packageDescription(pkgname, fields="Version")
   msg <- paste0(pkgname, " v ", pkgVersion, "  ",
-                "welcome to use AnnoProbe !", "\n")
+                "welcome to use GEOmirror !", "\n")
 
-  citation <- paste0("If you use ", pkgname, " in published research, please cite:\n",
-                     "AnnoProbe：An R package and shinyApp for annotating probe sequences\n",
-                     "Bioinformatics, 2019, XXXXXXXX")
+  citation <- paste0("If you use ", pkgname, " in published research, please acknowledgements:\n",
+                     "We thank Dr.Jianming Zeng(University of Macau), and all the members of his bioinformatics team, biotrainee, for generously sharing their experience and codes.")
 
   packageStartupMessage(paste0(msg, citation))
 }
